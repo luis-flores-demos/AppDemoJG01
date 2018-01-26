@@ -8,6 +8,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import java.util.ArrayList;
 
@@ -16,6 +17,7 @@ import demos.lafm.demojg1.activity.MainActivity;
 import demos.lafm.demojg1.adapter.SolicitudesAdapter;
 import demos.lafm.demojg1.custom.LFragment;
 import demos.lafm.demojg1.custom.LFragmentAdapter;
+import demos.lafm.demojg1.custom.Utils;
 import demos.lafm.demojg1.model.Solicitud;
 import me.relex.circleindicator.CircleIndicator;
 
@@ -30,6 +32,7 @@ public class SolicitudesFragment extends LFragment {
     private RecyclerView list;
     private RecyclerView.Adapter adapter;
     private RecyclerView.LayoutManager manager;
+    private Button btn_nueva_solicitud;
 
 
     public SolicitudesFragment() {
@@ -41,6 +44,7 @@ public class SolicitudesFragment extends LFragment {
 
         context = (MainActivity) getActivity();
         view = inflater.inflate(R.layout.layout_solicitudes, container, false);
+        btn_nueva_solicitud = (Button) view.findViewById(R.id.btn_nueva_solicitud);
 
         return onCreateView(view);
     }
@@ -63,6 +67,13 @@ public class SolicitudesFragment extends LFragment {
 
         adapter = new SolicitudesAdapter(solicitudes);
         list.setAdapter(adapter);
+
+        btn_nueva_solicitud.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Utils.showAlert(context, "¡Opción no disponible!");
+            }
+        });
 
     }
 
