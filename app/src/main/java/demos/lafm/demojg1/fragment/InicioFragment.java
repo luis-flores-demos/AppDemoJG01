@@ -53,6 +53,8 @@ public class InicioFragment extends LFragment {
     @Override
     public void onUpdateView() {
 
+        fragments = new ArrayList<>();
+
         for(int id : contenido){
             ImageFragment img = new ImageFragment();
             img.imageId = id;
@@ -79,6 +81,8 @@ public class InicioFragment extends LFragment {
 
             }
         });
+
+        adapter.notifyDataSetChanged();
 
     }
 
