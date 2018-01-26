@@ -13,12 +13,12 @@ import demos.lafm.demojg1.custom.LFragment;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class IformacionFragment extends LFragment {
+public class InformacionFragment extends LFragment {
 
     private MainActivity context;
     private View view;
 
-    public IformacionFragment() {
+    public InformacionFragment() {
 
     }
 

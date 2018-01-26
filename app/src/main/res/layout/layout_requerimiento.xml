@@ -17,12 +17,25 @@
         android:padding="20dp">
 
         <ImageView
+            android:id="@+id/img_camara"
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:src="@android:drawable/ic_menu_camera"
             android:layout_marginBottom="40dp"
             android:background="@drawable/border_corner_gray"/>
 
+        <Spinner
+            android:id="@+id/spiner_banco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/button_blue"
+            android:entries="@array/opciones"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:theme="@android:style/Theme.Holo.Light.DarkActionBar" />
+
+
         <android.support.design.widget.TextInputLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -32,10 +45,9 @@
             app:hintTextAppearance="@style/AppTheme">
 
             <EditText
-                android:id="@+id/edit_user"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Usuario"
+                android:hint="Dato 1"
                 android:inputType="text"
                 android:textSize="15dp"
                 android:paddingLeft="10dp"/>
@@ -51,10 +63,9 @@
             app:hintTextAppearance="@style/AppTheme">
 
             <EditText
-                android:id="@+id/edit_user"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Usuario"
+                android:hint="Dato 2"
                 android:inputType="text"
                 android:textSize="15dp"
                 android:paddingLeft="10dp"/>
@@ -70,35 +81,14 @@
             app:hintTextAppearance="@style/AppTheme">
 
             <EditText
-                android:id="@+id/edit_user"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Usuario"
+                android:hint="Dato 3"
                 android:inputType="text"
                 android:textSize="15dp"
                 android:paddingLeft="10dp"/>
 
         </android.support.design.widget.TextInputLayout>
-
-        <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="15dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            app:hintTextAppearance="@style/AppTheme">
-
-            <EditText
-                android:id="@+id/edit_user"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="Usuario"
-                android:inputType="text"
-                android:textSize="15dp"
-                android:paddingLeft="10dp"/>
-
-        </android.support.design.widget.TextInputLayout>
-
 
     </LinearLayout>
 
@@ -110,7 +100,7 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/btn_inicio"
+            android:id="@+id/btn_solicitudes"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@drawable/border_corner_blue"

@@ -1,13 +1,10 @@
 package demos.lafm.demojg1.activity;
 
 import android.content.pm.ActivityInfo;
-import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -19,7 +16,7 @@ import demos.lafm.demojg1.R;
 import demos.lafm.demojg1.custom.LFragment;
 import demos.lafm.demojg1.custom.LFragmentAdapter;
 import demos.lafm.demojg1.custom.LNonSwipeableViewPager;
-import demos.lafm.demojg1.fragment.IformacionFragment;
+import demos.lafm.demojg1.fragment.InformacionFragment;
 import demos.lafm.demojg1.fragment.InicioFragment;
 import demos.lafm.demojg1.fragment.SesionFragment;
 import demos.lafm.demojg1.fragment.SolicitudesFragment;
@@ -81,7 +78,7 @@ public class MainActivity extends AppCompatActivity {
         btn_informacion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                IformacionFragment fragment = new IformacionFragment();
+                InformacionFragment fragment = new InformacionFragment();
                 fragment.position = 3;
                 addFragment(fragment);
             }

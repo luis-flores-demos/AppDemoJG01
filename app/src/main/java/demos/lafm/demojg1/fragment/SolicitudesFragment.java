@@ -71,7 +71,9 @@ public class SolicitudesFragment extends LFragment {
         btn_nueva_solicitud.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Utils.showAlert(context, "¡Opción no disponible!");
+                RequerimientoFragment fragment = new RequerimientoFragment();
+                fragment.position = 5;
+                context.addFragment(fragment);
             }
         });
 
