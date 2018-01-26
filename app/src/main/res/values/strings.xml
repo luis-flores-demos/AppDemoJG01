@@ -16,5 +16,8 @@
     <string name="string_13">CATÁLOGO DE RECOMENDACIONES</string>
     <string name="string_14">CATÁLOGO DE RECOMENDACIONES</string>
 
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
 
 </resources>

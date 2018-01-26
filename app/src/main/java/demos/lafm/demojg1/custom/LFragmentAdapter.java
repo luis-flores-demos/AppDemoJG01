@@ -1,23 +1,22 @@
-package demos.lafm.demojg1.Adapter;
+package demos.lafm.demojg1.custom;
 
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class FragmentAdapter extends FragmentPagerAdapter {
+public class LFragmentAdapter extends FragmentPagerAdapter {
 
-    private List<Fragment> fragments = new ArrayList<>();
+    private List<LFragment> fragments = new ArrayList<>();
 
-    public FragmentAdapter(FragmentManager fm, List<Fragment> fragments) {
+    public LFragmentAdapter(FragmentManager fm, List<LFragment> fragments) {
         super(fm);
         this.fragments = fragments;
     }
 
     @Override
-    public Fragment getItem(int position) {
+    public LFragment getItem(int position) {
         return fragments.get(position);
     }
 
@@ -25,4 +24,5 @@ public class FragmentAdapter extends FragmentPagerAdapter {
     public int getCount() {
         return fragments.size();
     }
+
 }
