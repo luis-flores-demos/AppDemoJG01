@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">DEMOJG1</string>
+
+    <string name="string_1">APP SEGURIDAD\nINDUSTRIAL</string>
+    <string name="string_2">INICIAR SESIÓN</string>
+    <string name="string_3">ENTRAR</string>
+    <string name="string_4">USUARIO</string>
+    <string name="string_5">CONTRASEÑA</string>
+    <string name="string_6">CONTROL DE ENERGÍAS\nPELIGROSAS</string>
+    <string name="string_7">NOM-004-STPS-1999</string>
+    <string name="string_8">EQUIPO DE SEGURIDAD</string>
+    <string name="string_9">CATÁLOGO DE RECOMENDACIONES</string>
+    <string name="string_10">REGISTRAR INCIDENCIA</string>
+    <string name="string_11">COMPLETADO: 0/3</string>
+    <string name="string_12">Es un método que se aplica de manera sistemática para evitar que comience a funcionar un equipo, que una persona lo active involuntariamente o que se libere energía de forma incontrolada, cuando alguien está trabajando o cuando, por ciertas circunstancias, puedan encontrarse trabajadores cerca de los puntos peligrosos de las máquinas. Un candado es puesto de tal forma que el equipo no pueda ser conectado o en otros casos, se cuelga una tarjeta preventiva, en el dispositivo de desconexión del sistema. Este procedimiento se puede aplicar a equipos que están conectados eléctricamente o en válvulas y otros equipos mecánicos en los cuales la energía almacenada puede causar algún peligro.</string>
+    <string name="string_13">CATÁLOGO DE RECOMENDACIONES</string>
+    <string name="string_14">CATÁLOGO DE RECOMENDACIONES</string>
+
+
+</resources>
